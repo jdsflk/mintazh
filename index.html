@@ -160,6 +160,18 @@
           }
         }
       }
+
+      window.onload = function () {
+        var table = document.getElementById("myTable");
+        var rows = table.rows;
+        var names = new Array();
+        for(var i = 1; i < rows.length; i++) {
+            names.push(rows[i]
+          .getElementsByTagName("td")[0]
+          .innerHTML.toLowerCase())
+        }
+          alert(names);
+      };
     </script>
   </body>
 </html>

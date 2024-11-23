@@ -1,38 +1,39 @@
-#table-head {
-    background-color: lightgrey;
+th {
+  background-color: lightgrey;
 }
 
-th, td {
-    padding: 5px;
-    margin: 0;
+th,
+td {
+  padding: 5px;
+}
+
+table tr:nth-child(odd) {
+  background-color: lightcyan;
 }
 
 table {
-    width: 660px;
-    border-collapse: collapse;
-    text-align: left;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
+  width: 650px;
+  border-collapse: collapse;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
 
-.blue-row {
-    background-color: lightcyan;
+a {
+    text-decoration: none;
+    color: indigo;
 }
 
-label:hover {
-    color: darkgrey;
-}
-
-input[type="radio"] {
-    display: none;
+a:hover {
+  color: darkgrey;
 }
 
 label {
-    cursor: pointer;
-    color:indigo;
+  cursor: pointer;
+  color: indigo;
 }
 
 #searchBar {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }

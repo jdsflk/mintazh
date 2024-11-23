@@ -29,11 +29,6 @@ a:hover {
   color: darkgrey;
 }
 
-label {
-  cursor: pointer;
-  color: indigo;
-}
-
 #searchBar {
   margin-bottom: 20px;
 }

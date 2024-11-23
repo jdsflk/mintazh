@@ -9,6 +9,11 @@
   <body>
     <h1>Egyesületek</h1>
     <p>jdsflk</p>
+    <div id="searchBar">
+      Név:
+      <input type="text" id="nameInput" />
+      <button onclick="search()">Keresés</button>
+    </div>
     <table id="myTable">
       <tr id="table-head">
         <th>
@@ -105,8 +110,6 @@
           i = 0;
         table = document.getElementById("myTable");
         rows = table.rows;
-        console.log("th" + (n + 1));
-        console.log(rows[0].getElementsByTagName("th")[n].style);
         for (i = 0; i < rows.length; i++) {
           if (i == n) {
             rows[0].getElementsByTagName("th")[i].style.textDecoration =
@@ -138,6 +141,22 @@
             rows[i].classList.add("blue-row");
           } else {
             rows[i].classList.remove("blue-row");
+          }
+        }
+      }
+
+      function search() {
+        var name = document.getElementById("nameInput").value.toLowerCase();
+        var table = document.getElementById("myTable");
+        var rows = table.rows;
+        for (var i = 1; i < rows.length; i++) {
+          var cellText = rows[i]
+            .getElementsByTagName("td")[0]
+            .innerHTML.toLowerCase();
+          if (cellText.includes(name)) {
+            rows[i].style.display = ""; // Show row
+          } else {
+            rows[i].style.display = "none"; // Hide row
           }
         }
       }

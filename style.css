@@ -8,6 +8,7 @@ th, td {
 }
 
 table {
+    width: 660px;
     border-collapse: collapse;
     text-align: left;
     border-style: solid;
@@ -30,4 +31,8 @@ input[type="radio"] {
 label {
     cursor: pointer;
     color:indigo;
+}
+
+#searchBar {
+    margin-bottom: 20px;
 }

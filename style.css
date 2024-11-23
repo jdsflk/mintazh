@@ -31,7 +31,3 @@ label {
     cursor: pointer;
     color:indigo;
 }
-
-input[type="radio"]:checked + label {
-    text-decoration: underline;
-}

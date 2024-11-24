@@ -73,6 +73,7 @@ $result = $query->fetchAll(PDO::FETCH_OBJ);
     </table>
 
     <script>
+        console.log("Hello");
         /*window.onload = function () {
             var table = document.getElementById("myTable");
             var rows = table.rows;
@@ -82,7 +83,7 @@ $result = $query->fetchAll(PDO::FETCH_OBJ);
                     .getElementsByTagName("td")[0]
                     .innerHTML.toLowerCase())
             }
-            alert(names);
+            alert(names)
         };*/
         // Kristóf megoldása
         <?php
